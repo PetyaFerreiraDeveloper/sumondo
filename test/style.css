@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+#app {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'header'
+                         'main'
+                         'footer'
+}
+
+#app header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+#app main {
+    grid-area: main;
+    padding: 15px 5px 10px 5px;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(0, 300px) 1fr;
+}
+
+#app footer {
+    grid-area: footer;
+    background-color: aqua;
+}
+
+.form-row {
+    margin: 2rem;
+    border: solid black 1px;
+    padding: 2rem;
+}
