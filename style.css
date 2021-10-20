@@ -8,6 +8,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+@media (min-width: 1200px) {
+    .slider {
+        padding-top: 20rem;
+    }
+    .slider-container {
+        margin-top: -20rem;
+    }
 }
 
 .slider h1 {
