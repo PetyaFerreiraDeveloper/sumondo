@@ -1,0 +1,52 @@
+.slider {
+    background: url(images/background-image-home.png) center/cover no-repeat border-box, #ff1b68;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.slider p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.choose-option-buttons {
+    margin: 1.5rem;
+}
+
+.choose-option-buttons button {
+    margin: 1.5rem;
+    padding: 0.8rem 3rem;
+    border-radius: 3rem;
+    color: #177091;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.individual-button {
+    background: #dbc923;
+    transition: all 400ms linear 0s;
+}
+
+.individual-button:hover{
+    background: white;
+}
+
+.corporate-button:hover{
+    background: #dbc923;
+    color: white;
+    transition: all 400ms linear 0s;
+}
