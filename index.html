@@ -14,151 +14,183 @@
 
 <body>
     <div class="backdrop"></div>
-    <header class="main-header">
-        <div class="logo-container">
-            <a href="index.html" class="main-header-brand">
-                <img src="images/sumondo-logo.png"
-                    alt="Sumondo Mental Fitness - detect and treat stress before you suffer from it">
-            </a>
-        </div>
-        <div class="nav-lang-cart">
-            <nav class="main-nav">
-                <ul class="main-nav-items">
-                    <li class="main-nav-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="product/index.html">Product</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="shop/index.html">Shop</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="press/index.html">Press</a>
-                    </li>
-                    <li class="main-nav-item">
-                        <a href="blog/index.html">Blog</a>
-                    </li>
-                </ul>
-                <div class="lang-buttons">
-                    <button class="lang-button">DA</button>
-                    <button class="lang-button">NL</button>
-                    <button class="lang-button">EN</button>
-                    <button class="lang-button">SV</button>
-                </div>
-            </nav>
-
-            </button>
-        </div>
-        <button class="hamburger-menu" id="hamburger-menu">
-            <i class="fas fa-bars fa-2x"></i>
-        </button>
-        </div>
-
-    </header>
-    <nav class="mobile-nav">
-        <div class="mobile-logo-container">
-            <a href="index.html" class="mobile-nav-logo">
-                <img src="images/sumondo-logo.png"
-                    alt="Sumondo Mental Fitness - detect and treat stress before you suffer from it">
-            </a>
-            <div class="cart-and-close-container">
-                <div class="shopping-cart-container">
-                    <button class="shopping-cart-btn">
-                        <i class="fas fa-shopping-bag fa-2x"></i>
-                        <span class="badge">0</span>
-                    </button>
-                    <div class="shopping-cart-info-box">
-                        <div>
-                            <p>No products in the cart</p>
-                        </div>
-                        <div>
-                            <div>
-                                <p>Subtotal:</p>
-                                <p>DKK<span>O.OO</span></p>
-                                <!--with js i will change the value in the span-->
+    <article id="app">
+        <header class="main-header">
+            <div class="main-header-container">
+                <div class="top-header">
+                    <div class="logo-container">
+                        <a href="index.html" class="main-header-brand">
+                            <img src="images/sumondo-logo.png"
+                                alt="Sumondo Mental Fitness - detect and treat stress before you suffer from it">
+                        </a>
+                    </div>
+                    <div class="nav-lang-cart">
+                        <nav class="main-nav">
+                            <ul class="main-nav-items">
+                                <li class="main-nav-item">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a href="product/index.html">Product</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a href="shop/index.html">Shop</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a href="press/index.html">Press</a>
+                                </li>
+                                <li class="main-nav-item">
+                                    <a href="blog/index.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="lang-buttons">
+                                <button class="lang-button">DA</button>
+                                <button class="lang-button">NL</button>
+                                <button class="lang-button">EN</button>
+                                <button class="lang-button">SV</button>
                             </div>
-                            <div>
-                                <button>View Cart</button>
-                                <button>Checkout</button>
+                        </nav>
+
+                        </button>
+                    </div>
+                    <button class="hamburger-menu" id="hamburger-menu">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                    <button class="close-mobile-nav" id="close-mobile-nav">
+                        <i class="fas fa-times fa-2x"></i>
+                    </button>
+                </div>
+                <nav class="mobile-nav">
+                    <div class="mobile-nav-container">
+                        <ul class="mobile-nav-items">
+                            <li class="mobile-nav-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="product/index.html">Product</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="shop/index.html">Shop</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="press/index.html">Press</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="blog/index.html">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-nav-lang-buttons">
+                            <button class="mobile-lang-button">DA</button>
+                            <button class="mobile-lang-button">NL</button>
+                            <button class="mobile-lang-button">EN</button>
+                            <button class="mobile-lang-button">SV</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <section>
+                    <div class="slider">
+
+
+                        <div class="slider-container">
+                            <h1>Sumondo Mental Fitness</h1>
+                            <p>Detect and treat stress before you suffer from it</p>
+                            <div class="choose-option-buttons">
+                                <button class="corporate-button">For Corporates</button>
+                                <button class="individual-button">For Individuals</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <button class="close-mobile-nav">
-                    <i class="fas fa-times fa-3x"></i>
-                </button>
+                </section>
+                <section class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lmaOwqWSLkc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen autoplay="1" mute="1"></iframe>
+                </section>
+                <section class="benefits">
+                    <h2>What Are The User's Benefits</h2>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/running.png" alt="">
+                            <h4>Motion</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/music-box.png" alt="">
+                            <h4>Music</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/meditation.png" alt="">
+                            <h4>Meditation</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="images/for-bannerSumondo-sensor-Black300x500default-position.png" alt="">
+                        </div>
+                    </article>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/hearbeatline.svg" alt="">
+                            <h4>Stress Measurement</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/plaster.png" alt="">
+                            <h4>Recovery</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+                    <article class="">
+                        <div class="media-icon">
+                            <img src="images/breath.png" alt="">
+                            <h4>Breathing</h4>
+                            <p></p>
+                            <button>More...</button>
+                        </div>
+                    </article>
+
+                </section>
             </div>
-        </div>
-        <div class="mobile-nav-container">
-            <ul class="mobile-nav-items">
-                <li class="mobile-nav-item">
-                    <a href="index.html">Home</a>
+        </main>
+        <footer class="main-footer">
+            <ul>Company
+                <li>
+                    <a href="about/index.html">About</a>
                 </li>
-                <li class="mobile-nav-item">
-                    <a href="product/index.html">Product</a>
+                <li>
+                    <a href="about/index.html">Team</a>
                 </li>
-                <li class="mobile-nav-item">
-                    <a href="shop/index.html">Shop</a>
+                <li>
+                    <a href="press/index.html">Press & Media</a>
                 </li>
-                <li class="mobile-nav-item">
-                    <a href="press/index.html">Press</a>
+                <li>
+                    <a href="refund-shipping-conditions/index.html">Refund & Shopping COnditions</a>
                 </li>
-                <li class="mobile-nav-item">
-                    <a href="blog/index.html">Blog</a>
+                <li>
+                    <a href="about/index.html">Careers</a>
                 </li>
             </ul>
-            <div class="mobile-nav-lang-buttons">
-                <button class="mobile-lang-button">DA</button>
-                <button class="mobile-lang-button">NL</button>
-                <button class="mobile-lang-button">EN</button>
-                <button class="mobile-lang-button">SV</button>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section class="slider">
-            <div class="slider-container">
-                <h1>Sumondo Mental Fitness</h1>
-                <p>Detect and treat stress before you suffer from it</p>
-                <div class="choose-option-buttons">
-                    <button class="corporate-button">For Corporates</button>
-                    <button class="individual-button">For Individual</button>
-                </div>
-            </div>
-
-        </section>
-        <section class="video">
-            <video width="640" height="360" controls>
-                <source src="https://youtu.be/lmaOwqWSLkc">
-            </video>
-        </section>
-        <section class="video">
-            <video width="640" height="360" controls>
-                <source src="https://youtu.be/lmaOwqWSLkc">
-            </video>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <ul>Company
-            <li>
-                <a href="about/index.html">About</a>
-            </li>
-            <li>
-                <a href="about/index.html">Team</a>
-            </li>
-            <li>
-                <a href="press/index.html">Press & Media</a>
-            </li>
-            <li>
-                <a href="refund-shipping-conditions/index.html">Refund & Shopping COnditions</a>
-            </li>
-            <li>
-                <a href="about/index.html">Careers</a>
-            </li>
-        </ul>
-    </footer>
-    <script src="shared.js"></script>
+        </footer>
+        <script src="shared.js"></script>
+    </article>
 </body>
 
 </html>

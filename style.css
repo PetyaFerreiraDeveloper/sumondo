@@ -1,9 +1,16 @@
 .slider {
     background: url(images/background-image-home.png) center/cover no-repeat border-box, #ff1b68;
     width: 100%;
-    height: 70%;
+    height: 50vh;
     position: relative;
-    top: -5rem;
+}
+
+.slider-container {
+    width: 100%;
+    height: 70vh;
+    padding: 0 1rem;
+    position: relative;
+    /* top: 10rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,12 +19,7 @@
 }
 
 @media (min-width: 1200px) {
-    .slider {
-        padding-top: 20rem;
-    }
-    .slider-container {
-        margin-top: -20rem;
-    }
+    
 }
 
 .slider h1 {
@@ -59,4 +61,11 @@
     background: #dbc923;
     color: white;
     transition: all 400ms linear 0s;
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 }
