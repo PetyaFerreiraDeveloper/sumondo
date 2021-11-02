@@ -169,6 +169,7 @@ body {
     top: 4.5rem;
     right: 3rem;
     background: white;
+    display: none;
 }
 
 .purchases {
