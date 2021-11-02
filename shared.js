@@ -2,6 +2,7 @@ let hamburger = document.getElementById('hamburger-menu');
 let mobileNav = document.querySelector('.mobile-nav');
 let backdrop = document.querySelector('.backdrop');
 let closeMobileNav = document.querySelector('.close-mobile-nav');
+let shoppingCart = document.querySelector('.cart')
 
 hamburger.addEventListener('click', function() {
     mobileNav.classList.add('open');
@@ -23,6 +24,14 @@ closeMobileNav.addEventListener('click', function() {
     hamburger.classList.remove('close');
     closeMobileNav.classList.remove('open');
 });
+
+shoppingCart.addEventListener('mouseover', function() {
+    // openTheBox.classList.add('open');
+})
+
+shoppingCart.addEventListener('mouseout', function() {
+    // openTheBox.classList.add('open');
+})
 
 // change the header on scroll
 
