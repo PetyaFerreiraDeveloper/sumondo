@@ -47,7 +47,7 @@ body {
     grid-template-areas: "header"
                          "main"
                          "footer";
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #app main {
@@ -64,7 +64,6 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-    
     transition: all 0.3s linear;
 }
 
@@ -72,15 +71,16 @@ body {
     background: white;
 }
 
-.main-header-container {
+/* .main-header-container {
     padding: 1.25rem 1rem;
-}
+} */
 
 .top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 40;
+    padding: 1.25rem 1rem;
 }
 
 .logo-container {
@@ -103,7 +103,6 @@ body {
 
 .main-nav {
     display: none;
-    
 }
 
 .main-nav-items {

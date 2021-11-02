@@ -26,10 +26,11 @@ closeMobileNav.addEventListener('click', function() {
 
 // change the header on scroll
 
-let header = document.getElementsByTagName('header')[0];
+let topHeader = document.querySelector('.top-header')
 
-header.addEventListener('scroll', function() {
-    header.classList.add('scrolled')
+window.addEventListener('scroll', function() {
+    // console.log('Hello');
+    topHeader.classList.add('scrolled')
 })
 
 
