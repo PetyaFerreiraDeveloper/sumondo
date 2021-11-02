@@ -80,16 +80,12 @@ body {
     align-items: center;
     justify-content: space-between;
     z-index: 40;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 3rem 1rem 1rem;
 }
 
 .logo-container {
     padding: 0 1rem;
 }
-
-/* .logo-container a {
-    padding: 1rem;
-} */
 
 .rest-container {
     display: flex;
@@ -168,6 +164,86 @@ body {
     padding: 0.5rem;
 }
 
+.cart-info {
+    position: absolute;
+    top: 4.5rem;
+    right: 3rem;
+    background: white;
+}
+
+.purchases {
+    background: white;
+    padding: 1.25rem;
+}
+
+.purchases p {
+    margin: 0;
+    color: #676b75;
+}
+
+.status {
+    background: #f9f9f9;
+    padding: 1.25rem;
+}
+
+.status .value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.status .value p{
+    margin: 0;
+    color: #676b75;
+}
+
+.status .value p:nth-child(2){
+    font-size: 1.25rem;
+    color: #1b1d22;
+}
+
+.status .value span{
+    font-size: 1.25rem;
+    color: #1b1d22;
+}
+
+.status .cart-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.status .cart-buttons a {
+    text-decoration: none;
+    color: #177091;
+    padding: 0.5rem 2rem;
+    border-radius: 45px;
+    border: 1px solid #177091;
+    text-align: center;
+    background: none;
+}
+
+.status .cart-buttons a:first-child{
+    background: none;
+    color: #177091;
+    margin-right: 1.5rem;
+}
+
+.status .cart-buttons a:first-child:hover{
+    background: #177091;
+    color: white;
+}
+.status .cart-buttons a:nth-child(2){
+    background: #177091;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+.status .cart-buttons a:nth-child(2):hover{
+    color: #177091;
+    background: none;
+}
+
 .hamburger-menu {
     background: none;
     border: none;
@@ -190,7 +266,7 @@ body {
 .mobile-nav {
     background: white;
     width: 100%;
-    transform: translateY(-150%);
+    transform: translateY(-200%);
     transition: transform 0.4s ease-out;
     z-index: 3;
 }
