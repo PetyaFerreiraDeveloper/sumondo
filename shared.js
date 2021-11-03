@@ -54,11 +54,15 @@ shoppingCart.addEventListener('mouseover', function() {
 
 // change the header on scroll
 
-let topHeader = document.querySelector('.top-header')
+let topHeader = document.querySelector('.top-header');
+let listLi = document.querySelector('.main-nav-items').getElementsByTagName('a');
 
 window.addEventListener('scroll', function() {
-    // console.log('Hello');
-    topHeader.classList.add('scrolled')
+    topHeader.classList.add('scrolled');
+    for (el of listLi) {
+        el.classList.add('scrolled-font-color');
+    }
+    hamburger.classList.add('scrolled');
 })
 
 

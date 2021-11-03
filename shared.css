@@ -13,6 +13,7 @@
     --background-blue: #2ea2cc;
     --main-ff: 'Poppins', sans-serif;
     --nav-color: #555555;
+    --change-el-color: #177091;
 }
 
 * {
@@ -59,7 +60,6 @@ body {
 #app .main-header {
     grid-area: header;
     width: 100%;
-    /* padding: 0.5rem 1rem; */
     position: fixed;
     top: 0;
     left: 0;
@@ -71,9 +71,7 @@ body {
     background: white;
 }
 
-/* .main-header-container {
-    padding: 1.25rem 1rem;
-} */
+
 
 .top-header {
     display: flex;
@@ -109,6 +107,8 @@ body {
 .main-nav-items {
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-nav-item a{
@@ -117,15 +117,8 @@ body {
     margin: 0.5rem;
 }
 
-.lang-buttons {
-    margin-left: 1rem;
-}
-
-.main-nav-item button {
-    margin: 0.5rem;
-}
-
-.lang-button {
+.lang-button a{
+    text-decoration: none;
     background-color: var(--sumondo-orange);
     color: white;
     border-radius: 50%;
@@ -148,13 +141,6 @@ body {
 .rest-container .cart button:hover{
     cursor: pointer;
 }
-
-/* .rest-container .cart:hover + .cart-info{
-    display: block;
-}
-.cart-info:hover {
-    display: block;
-} */
 
 .rest-container .cart-span{
     position: absolute;
@@ -372,4 +358,12 @@ body {
     .hamburger-menu {
         display: none;
     }
+}
+
+.main-nav-item a.scrolled-font-color {
+    color: black;
+}
+
+.hamburger-menu.scrolled {
+    color: var(--change-el-color);
 }
