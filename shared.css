@@ -325,16 +325,28 @@ body {
 }
 
 #app .main-footer {
-    background: black;
+    background: var(--change-el-color);
     grid-area: footer;
     margin-top: 2rem;
 }
 
 .main-footer ul {
     color: white;
+    list-style: none;
 }
 
+.main-footer li {
+    color: var(--sumondo-orange)
+}
 
+.main-footer p {
+    color: white;
+}
+
+.main-footer a {
+    color: var(--sumondo-orange);
+    text-decoration: none;
+}
 
 @media (min-width: 55rem) {
     .main-nav {
@@ -368,6 +380,7 @@ body {
 
 .top-header.scrolled {
     background: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
 }
 
 .top-header.scrolled a {
