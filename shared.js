@@ -37,21 +37,6 @@ shoppingCart.addEventListener('mouseover', function() {
     });
 })
 
-// cartInfo.addEventListener('mouseover', function() {
-//     cartInfo.classList.add('open');
-// })
-
-// shoppingCart.addEventListener('mouseout', function() {
-//     cartInfo.addEventListener('mouseout', function() {
-//         cartInfo.classList.remove('open');
-//     });
-//     cartInfo.classList.remove('open');
-// })
-
-// mainHeader.addEventListener('mouseout',function() {
-//     cartInfo.classList.remove('open');
-// })
-
 
 // shoppingCart.addEventListener('mouseout', function() {
 //     let bool = false;

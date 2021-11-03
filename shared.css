@@ -149,6 +149,13 @@ body {
     cursor: pointer;
 }
 
+/* .rest-container .cart:hover + .cart-info{
+    display: block;
+}
+.cart-info:hover {
+    display: block;
+} */
+
 .rest-container .cart-span{
     position: absolute;
     top: -0.3rem;
