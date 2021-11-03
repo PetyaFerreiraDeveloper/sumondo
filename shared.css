@@ -67,11 +67,9 @@ body {
     transition: all 0.3s linear;
 }
 
-.scrolled {
+/* .scrolled {
     background: white;
-}
-
-
+} */
 
 .top-header {
     display: flex;
@@ -360,10 +358,22 @@ body {
     }
 }
 
-.main-nav-item a.scrolled-font-color {
+/* .main-nav-item a.scrolled-font-color {
     color: black;
 }
 
 .hamburger-menu.scrolled {
     color: var(--change-el-color);
+} */
+
+.top-header.scrolled {
+    background: white;
+}
+
+.top-header.scrolled a {
+    color: black
+}
+
+.top-header.scrolled .hamburger-menu {
+    color: var(--change-el-color)
 }

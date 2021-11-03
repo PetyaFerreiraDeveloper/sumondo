@@ -6,33 +6,33 @@ let shoppingCart = document.querySelector('.cart');
 let cartInfo = document.querySelector('.cart-info');
 let mainHeader = document.querySelector('.main-header-container');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     mobileNav.classList.add('open');
     closeMobileNav.classList.add('open');
     backdrop.classList.add('open');
     hamburger.classList.add('close');
 });
 
-backdrop.addEventListener('click', function() {
+backdrop.addEventListener('click', function () {
     mobileNav.classList.remove('open');
     backdrop.classList.remove('open');
     hamburger.classList.remove('close');
     closeMobileNav.classList.remove('open');
 });
 
-closeMobileNav.addEventListener('click', function() {
+closeMobileNav.addEventListener('click', function () {
     mobileNav.classList.remove('open');
     backdrop.classList.remove('open');
     hamburger.classList.remove('close');
     closeMobileNav.classList.remove('open');
 });
 
-shoppingCart.addEventListener('mouseover', function() {
+shoppingCart.addEventListener('mouseover', function () {
     cartInfo.classList.add('open');
-    cartInfo.addEventListener('mouseover', function() {
+    cartInfo.addEventListener('mouseover', function () {
         cartInfo.classList.add('open');
     })
-    cartInfo.addEventListener('mouseout', function() {
+    cartInfo.addEventListener('mouseout', function () {
         cartInfo.classList.remove('open');
     });
 })
@@ -40,7 +40,7 @@ shoppingCart.addEventListener('mouseover', function() {
 
 // shoppingCart.addEventListener('mouseout', function() {
 //     let bool = false;
-    
+
 //     cartInfo.addEventListener('mouseover', function(){
 //         bool = true;
 //     })
@@ -49,7 +49,7 @@ shoppingCart.addEventListener('mouseover', function() {
 //     } else {
 //         cartInfo.classList.remove('open');
 //     }
-    
+
 // })
 
 // change the header on scroll
@@ -57,12 +57,27 @@ shoppingCart.addEventListener('mouseover', function() {
 let topHeader = document.querySelector('.top-header');
 let listLi = document.querySelector('.main-nav-items').getElementsByTagName('a');
 
-window.addEventListener('scroll', function() {
-    topHeader.classList.add('scrolled');
-    for (el of listLi) {
-        el.classList.add('scrolled-font-color');
+window.onscroll = function () { myFunction() }
+
+function myFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        topHeader.classList.add('scrolled');
+        for (el of listLi) {
+            el.classList.add('scrolled');
+        }
+        hamburger.classList.add('scrolled');
+
+    } else {
+        topHeader.classList.remove('scrolled');
+        for (el of listLi) {
+            el.classList.remove('scrolled');
+        }
+        hamburger.classList.remove('scrolled');
     }
-    hamburger.classList.add('scrolled');
-})
+}
+
+
+
+
 
 
