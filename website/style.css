@@ -18,15 +18,13 @@
     
 }
 
-@media (min-width: 1200px) {
-    
-}
+
 
 .slider h1 {
     color: white;
     text-align: center;
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .slider p {
@@ -36,13 +34,16 @@
 }
 
 .choose-option-buttons {
+    display: flex;
+    flex-direction: column;
     margin: 1.5rem;
 }
 
 .choose-option-buttons button {
-    margin: 0 0 0 1.5rem;
+    margin: 1rem;
     padding: 0.8rem 3rem;
     border-radius: 3rem;
+    border-color: transparent;
     color: #177091;
     font-size: 1rem;
     cursor: pointer;
@@ -68,4 +69,11 @@
     align-items: center;
     justify-content: center;
     margin: 1rem;
+}
+
+
+@media (min-width: 48rem) {
+    .choose-option-buttons {
+        flex-direction: row;
+    }
 }
